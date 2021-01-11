@@ -1,4 +1,7 @@
+let test222 = "";
+
 let request = (searchItem) => {
+    console.log(test222);
     fetch('https://api.giphy.com/v1/gifs/translate?api_key=sSKaltuKwGZbZf1hGNN3ioPlocFboxOb&s=' + searchItem, {mode: 'cors'})
     .then(function(response) {
         return response.json();
